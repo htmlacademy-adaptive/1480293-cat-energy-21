@@ -3,15 +3,16 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
       <a class="page-header__logo">
         <img src="img/logotype-mobile.svg" width="33" height="37" alt="CAT ENERGY">
+        <span class="page-header__name">
+          CAT ENERGY <!--или это в меню внести?-->
+        </span>
       </a>
-      <span class="page-header__name">
-        CAT ENERGY <!--или это в меню внести?-->
-      </span>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <div class="main-nav__wrapper">
@@ -36,7 +37,7 @@
       </nav>
     </header>
     <main class="page-main">
-      <h1 class="visually__hidden"></h1>
+      <h1 class="visually__hidden">Питание для котов</h1>
       <section class="slogan">
         <div class="slogan__wrapper">
           <h2 class="slogan__header">Функциональное питание для котов</h2>
@@ -99,11 +100,11 @@
           </p>
           <div class="examples">
             <ul class="examples__list">
-              <li class="examples__list examples__list--weight">
+              <li class="examples__item examples__item--weight">
                 <p class="examples__value">5кг</p>
                 <p class="examples__description">снижение веса</p>
               </li>
-              <li class="examples__list examples__list--time">
+              <li class="examples__item examples__item--time">
                 <p class="examples__value">60 дней</p>
                 <p class="examples__description">затрачено времени</p>
               </li>
