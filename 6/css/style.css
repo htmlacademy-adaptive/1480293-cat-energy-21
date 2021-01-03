@@ -1,0 +1,9 @@
+@import url("global/normalize.scss");
+@import url("global/fonts.scss");
+@import url("global/variables.scss");
+@import url("global/mixins.scss");
+@import url("global/common.scss");
+@import url("blocks/visually__hidden.scss");
+@import url("blocks/page-header.scss");
+
+/*# sourceMappingURL=style.css.map */
