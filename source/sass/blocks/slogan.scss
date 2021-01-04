@@ -6,10 +6,26 @@
   text-transform: none;
 }
 
-.slogan__intro p {
+.slogan__intro p,
+.slogan__to-all {
   font-weight: 400;
   font-size: 14px;
   line-height: 14px;
   color: $basic-white;
   text-transform: uppercase;
 }
+
+.slogan__to-all {
+  background-color: $basic-light-green;
+}
+
+.slogan__to-all:hover,
+.slogan__to-all:focus{
+  background-color: $basic-green;
+}
+
+.slogan__to-all:active {
+  background-color: $basic-light-green;
+  opacity: 0.3;  /*вряд ли сработает*/
+}
+
