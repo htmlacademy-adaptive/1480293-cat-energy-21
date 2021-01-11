@@ -3,7 +3,6 @@
   font-size: 60px;
   line-height: 60px;
   color: $basic-white;
-  text-transform: none;
 }
 
 .slogan__intro p,
@@ -16,6 +15,7 @@
 }
 
 .slogan__to-all {
+  padding: 14px 26px;
   background-color: $basic-light-green;
 }
 
@@ -25,7 +25,8 @@
 }
 
 .slogan__to-all:active {
-  background-color: $basic-light-green;
-  opacity: 0.3;  /*вряд ли сработает*/
+  background-color: $basic-green;
+  opacity: 0.3;
 }
+
 

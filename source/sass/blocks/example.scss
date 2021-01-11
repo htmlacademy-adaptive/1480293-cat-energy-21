@@ -1,0 +1,36 @@
+.example__title {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  color: $basic-black;
+}
+
+.example__description {
+  font-family: Arial, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: $basic-dark-gray;
+}
+
+.example__value {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  color: $basic-black;
+}
+
+.examples__description {
+  font-family: Arial, sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  color: $basic-dark-gray;
+}
+
+.example__cost {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: $basic-black;
+}
