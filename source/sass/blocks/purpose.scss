@@ -1,0 +1,23 @@
+
+.purpose__label {
+  font-weight: 400;
+  font-size: 16px; //* В Форме размер один в стайлгаде другой//
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $basic-dark-dark-gray;
+}
+
+.purpose__input {
+  color: $basic-black; //* как сделать текст в в поле черным?//
+  border: 1px solid $border-grey;
+}
+
+.purpose__input:hover {
+  border: 1px solid $purpose-gray;
+}
+
+.purpose__item:disabled {  //* как проверить?//
+  opacity: 0.3;
+}
+
+
