@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Кэт энерджи: подбор программы</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
@@ -39,84 +40,84 @@
       <h1 class="page-title">Подбор программы</h1>
       <p class="page-text">Заполните анкету, и мы подберем <br>программу питания для вашего кота
       </p>
-      <form class="personaldata" action="https://echo.htmlacademy.ru" method="post">
-        <div class="personaldata-wrapper">
-          <p class="personaldata__name"> <!-- Или лучше сделать здесь personaldata__item  personaldata__item--name и т.д.?-->
-            <label class="personaldata-name--title" for="personaldata-name">Имя:*</label>
-            <input class="personaldata-name--value" id="personaldata-name" type="text" placeholder="БАРСИК"> <!-- Нужно name?-->
-          </p>
-          <p class="personaldata__weight">
-            <label class="personaldata__weight--title" for="personaldata-weight">ВЕС (КГ):*</label>
-            <input class="personaldata__weight--value" id="personaldata-weight" type="number" placeholder="7">
-          </p>
-          <p class="personaldata__age">
-            <label class="personaldata__age--title" for="personaldata-age">ВОЗРАСТ (ЛЕТ):</label>
-            <input class="personaldata__age--value" id="personaldata-age" type="number" placeholder="7">
-          </p>
-        </div>
-      </form>
-      <form class="purpose" action="https://echo.htmlacademy.ru" method="post">
-        <fieldset class="purpose-wrapper">
-          <ul class="purpose__list">
-            <li class="purpose-item">
-              <input class="" type="radio" name="" value="losingweight" id="losingweight" checked>
-              <label for="losingweight">ПОХУДЕНИЕ</label>
-            </li>
-            <li class="purpose__list">
-              <input class="" type="radio" name="" value="weightgain" id="weightgain">
-              <label for="weightgain">НАБОР МАССЫ</label>
-            </li>
-            <li class="purpose__list">
-              <input class="" type="radio" name="" value="advice" id="advice">
-              <label for="advice">Не знаю (Нужен ваш совет)</label>
-            </li>
-          </ul>
-        </fieldset>
-      </form>
-      <form class="contactsforms" action="https://echo.htmlacademy.ru" method="post">
-        <h2 class="contactsforms__title">Контактные данные (владельца кота)</h2><!-- Можно так?-->
-        <div class="contactsforms__wrapper">
-          <p class="contactsforms__item">
-            <label class="contactsforms-item--name" for="contactsforms-name">E-mail:*</label>
-            <input class="contactsforms-item--value" id="contactsforms-name" type="email" name="mail" placeholder="кuklachev@gmail.com">
-          </p>
-          <p class="contactsforms__item">
-            <label class="contactsforms-item--name" for="contactsforms-phone">Телефон:*</label>
-            <input class="contactsforms-item--value" id="contactsforms-phone" type="tel" name="phone" placeholder="8 (960) 900-60-90">
-          </p>
-        </div>
-      </form>
-      <form class="comments" action="https://echo.htmlacademy.ru" method="post">
-        <h2 class="comments__title">Комментарий</h2>
-        <textarea name="comment" id="comment-field" rows="10">Расскажите обо всех повадках кота </textarea>
-      </form>
-      <form class="additionally" action="https://echo.htmlacademy.ru" method="post">
-        <fieldset class="additionally-wrapper">
-          <ul class="additionally__list">
-            <li class="additionally-item">
-              <input class="" type="checkbox" name="" value="losingweight" id="losingweight" checked>
-              <label for="losingweight">Сахарозаменитель</label>
-            </li>
-            <li class="additionally__list">
-              <input class="" type="checkbox" name="" value="weightgain" id="weightgain">
-              <label for="weightgain">Питьевая вода</label>
-            </li>
-            <li class="additionally__list">
-              <input class="" type="checkbox" name="" value="advice" id="advice">
-              <label for="advice">молоко</label>
-            </li>
-            <li class="additionally__list">
-              <input class="" type="checkbox" name="" value="advice" id="advice">
-              <label for="advice">витамины</label>
-            </li>
-          </ul>
-          <a class="button additionally__programms" href="#">
-            ПОДОБРАТЬ ПРОГРАММУ
-          </a>
-          <small class="additionally__legend additionally__legend--bottom">
-            * — Обязательные поля
-          </small>
-        </fieldset>
+      <form class="application-form" action="https://echo.htmlacademy.ru" method="post">
+        <section class="application-form__wrapper">
+          <div class="application-form__personal-data personal-data"> //TODO Или class="application-form__item personal-data"
+            <p class="personal-data__name"> <!-- Или лучше сделать здесь personal-data__item  personal-data__item--name и т.д.?-->
+              <label class="personal-data__label" for="personal-data-name">Имя:*</label>
+              <input class="personal-data__input" id="personal-data-name" type="text" placeholder="БАРСИК"> <!-- Нужно name?-->
+            </p>
+            <p class="personal-data__weight">
+              <label class="personal-data__label" for="personal-data-weight">ВЕС (КГ):*</label>
+              <input class="personal-data__input" id="personal-data-weight" type="number" placeholder="7">
+            </p>
+            <p class="personal-data__age">
+              <label class="personal-data__label" for="personal-data-age">ВОЗРАСТ (ЛЕТ):</label>
+              <input class="personal-data__input" id="personal-data-age" type="number" placeholder="7">
+            </p>
+          </div>
+          <div class="application-form__purpose purpose">
+            <fieldset class="purpose__wrapper">
+              <ul class="purpose__list">
+                <li class="purpose__item">
+                  <input class="purpose__input" type="radio" name="" value="losingweight" id="losingweight" checked>
+                  <label class="purpose__label" for="losingweight">ПОХУДЕНИЕ</label>
+                </li>
+                <li class="purpose__list">
+                  <input class="purpose__input" type="radio" name="" value="weightgain" id="weightgain">
+                  <label class="purpose__label" for="weightgain">НАБОР МАССЫ</label>
+                </li>
+                <li class="purpose__list">
+                  <input class="purpose__input" type="radio" name="" value="advice" id="advice">
+                  <label class="purpose__label" for="advice">Не знаю (Нужен ваш совет)</label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+          <div class="application-form__contacts-forms contacts-forms" action="https://echo.htmlacademy.ru" method="post"> //TODO contacts-forms надо еще отдельно
+            <h2 class="contacts-forms__title">Контактные данные (владельца кота)</h2><!-- Можно так?-->
+            <span class="contacts-forms__wrapper">
+              <p class="contacts-forms__item">
+                <label class="contacts-forms__label" for="contacts-forms-name">E-mail:*</label>
+                <input class="contacts-forms__input" id="contacts-forms-name" type="email" name="mail" placeholder="кuklachev@gmail.com">
+              </p>
+              <p class="contacts-forms__item">
+                <label class="contacts-forms__label" for="contacts-forms-phone">Телефон:*</label>
+                <input class="contacts-forms__input" id="contacts-forms-phone" type="tel" name="phone" placeholder="8 (960) 900-60-90">
+              </p>
+            </span>
+          </div>
+          <div class="application-form__comments comments" action="https://echo.htmlacademy.ru" method="post">
+            <h2 class="comments__title">Комментарий</h2>
+            <textarea name="comment" id="comment-field" rows="10">Расскажите обо всех повадках кота </textarea>
+          </div>
+          <div class="application-form__additionally additionally">
+            <fieldset class="additionally__wrapper">
+              <ul class="additionally__list">
+                <li class="additionally__item">
+                  <input class="additionally__input" type="checkbox" name="" value="losingweight" id="losingweight" checked>
+                  <label class="additionally__label" for="losingweight">Сахарозаменитель</label>
+                </li>
+                <li class="additionally__list">
+                  <input class="additionally__input" type="checkbox" name="" value="weightgain" id="weightgain">
+                  <label class="additionally__label" for="weightgain">Питьевая вода</label>
+                </li>
+                <li class="additionally__list">
+                  <input class="additionally__input" type="checkbox" name="" value="advice" id="advice">
+                  <label class="additionally__label" for="advice">молоко</label>
+                </li>
+                <li class="additionally__list">
+                  <input class="additionally__input" type="checkbox" name="" value="advice" id="advice">
+                  <label class="additionally__label" for="advice">витамины</label>
+                </li>
+              </ul>
+              <input type="submit" value="подобрать программу">
+              <small class="additionally__legend additionally__legend--bottom">
+                * — Обязательные поля
+              </small>
+            </fieldset>
+          </div>
+        </section>
       </form>
       <section class="contacts">
         <div class="contacts__wrapper">
@@ -132,15 +133,6 @@
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <div class="page-footer__contacts contacts">
-          <p class="contacts__title">
-            ПРИГЛАШАЕМ <br> К СОТРУДНИЧЕСТВУ <br> ДИЛЕРОВ!
-          </p>
-          <p class="contacts__text">
-            ул. Большая <br> Конюшенная, д. 19/8 <br>Санкт-Петербург
-          </p>
-          <span>Карта</span>
-        </div>
         <div class="page-footer__social social">
           <b class="social__title">Давайте дружить!</b>
           <ul class="social__list">

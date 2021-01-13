@@ -1,0 +1,32 @@
+.slogan__header h2 {
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 60px;
+  color: $basic-white;
+}
+
+.slogan__intro p,
+.slogan__to-all {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: $basic-white;
+  text-transform: uppercase;
+}
+
+.slogan__to-all {
+  padding: 14px 26px;
+  background-color: $basic-light-green;
+}
+
+.slogan__to-all:hover,
+.slogan__to-all:focus{
+  background-color: $basic-green;
+}
+
+.slogan__to-all:active {
+  background-color: $basic-green;
+  opacity: 0.3;
+}
+
+

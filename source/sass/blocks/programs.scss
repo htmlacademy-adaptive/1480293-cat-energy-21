@@ -1,0 +1,31 @@
+.programs__title {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 37px;
+  color: $basic-black;
+  text-transform: uppercase;
+}
+
+.programs__description {
+  font-family: Arial, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: $basic-dark-gray;
+}
+
+.programs__link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: $basic-black;
+}
+
+.programs__link:hover,
+.programs__link:focus {
+
+}
+
+.programs__link:active {
+  opacity: 0.3;
+}

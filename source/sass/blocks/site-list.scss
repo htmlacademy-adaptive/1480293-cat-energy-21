@@ -1,0 +1,23 @@
+
+
+.site-list__item a {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  color: $basic-black;
+  text-transform: uppercase;
+}
+
+.site-list__item a:hover,
+.site-list__item a:focus {
+  opacity: 0.6;
+}
+
+.site-list__item a:active {
+  opacity: 0.3;
+}
+
+.site-list__item--active {
+  border-bottom: 2px solid $basic-light-green;
+
+}
