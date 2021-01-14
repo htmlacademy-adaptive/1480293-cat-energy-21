@@ -1,0 +1,43 @@
+.additional-goods__header {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  color: $basic-black;
+}
+
+.additional-goods__title {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  color: $basic-more-dark-gray;
+  text-transform: uppercase;
+}
+
+.additional-goods__value,
+.additional-goods__price {
+  font-family: Arial, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: $basic-dark-gray;
+}
+
+.additional-goods__order {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 0px;
+  padding: 10px 220px; //*маржин и паддин сложил или разделить?//
+  text-transform: uppercase;
+  color: $basic-white;
+  background-color: $basic-light-green;
+}
+
+.additional-goods__order:hover,
+.additional-goods__order:focus {
+  background-color: $basic-green;
+}
+
+.additional-goods__order:active {  //* почему добавляется черный бордер?//
+  background-color: $basic-green;
+  opacity: 0.3;
+}
