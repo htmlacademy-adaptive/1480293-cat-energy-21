@@ -1,0 +1,32 @@
+.product {
+  text-decoration: none; //*почему то что в common не работает?//
+}
+
+
+.product__item--title {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: $basic-more-dark-gray;
+  text-transform: uppercase;
+}
+
+
+.product__order {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 10px 109px;
+}
+
+.product__order:hover,
+.product__order:focus {
+  background-color: $basic-green;
+}
+
+.product__order:active {  //* почему добавляется черный бордер?//
+  background-color: $basic-green;
+  opacity: 0.3;
+}
+
+
