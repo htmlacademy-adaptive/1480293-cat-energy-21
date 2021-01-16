@@ -10,26 +10,26 @@
       <a class="page-header__logo">
         <img src="img/logotype-mobile.svg" width="33" height="37" alt="CAT ENERGY">
       </a>
-      <span class="page-header__name">
-        CAT ENERGY <!--или это в меню внести?-->
-      </span>
+      <!--<span class="page-header__name">
+        CAT ENERGY или это в меню внести?
+      </span> -->
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
-              <a>
-                ГЛАВНАЯ
+              <a href="index.html">
+                Главная
               </a>
             </li>
             <li class="site-list__item">
-              <a href="photo.html">
-                КАТАЛОГ ПРОДУКЦИИ
+              <a href="catalog.html">
+                Каталог продукции
               </a>
             </li>
             <li class="site-list__item site-list__item--active">
               <a href="form.html">
-                ПОДБОР ПРОГРАММЫ
+                Подбор программы
               </a>
             </li>
           </ul>
@@ -42,17 +42,17 @@
       </p>
       <form class="application-form" action="https://echo.htmlacademy.ru" method="post">
         <section class="application-form__wrapper">
-          <div class="application-form__personal-data personal-data"> //TODO Или class="application-form__item personal-data"
+          <div class="application-form__personal-data personal-data"> <!--//TODO Или class="application-form__item personal-data"-->
             <p class="personal-data__name"> <!-- Или лучше сделать здесь personal-data__item  personal-data__item--name и т.д.?-->
               <label class="personal-data__label" for="personal-data-name">Имя:*</label>
               <input class="personal-data__input" id="personal-data-name" type="text" placeholder="БАРСИК"> <!-- Нужно name?-->
             </p>
             <p class="personal-data__weight">
-              <label class="personal-data__label" for="personal-data-weight">ВЕС (КГ):*</label>
+              <label class="personal-data__label" for="personal-data-weight">Вес (кг):*</label>
               <input class="personal-data__input" id="personal-data-weight" type="number" placeholder="7">
             </p>
             <p class="personal-data__age">
-              <label class="personal-data__label" for="personal-data-age">ВОЗРАСТ (ЛЕТ):</label>
+              <label class="personal-data__label" for="personal-data-age">Возраст (лет):</label>
               <input class="personal-data__input" id="personal-data-age" type="number" placeholder="7">
             </p>
           </div>
@@ -61,11 +61,11 @@
               <ul class="purpose__list">
                 <li class="purpose__item">
                   <input class="purpose__input" type="radio" name="" value="losingweight" id="losingweight" checked>
-                  <label class="purpose__label" for="losingweight">ПОХУДЕНИЕ</label>
+                  <label class="purpose__label" for="losingweight">Похудение</label>
                 </li>
                 <li class="purpose__list">
                   <input class="purpose__input" type="radio" name="" value="weightgain" id="weightgain">
-                  <label class="purpose__label" for="weightgain">НАБОР МАССЫ</label>
+                  <label class="purpose__label" for="weightgain">Набор массы</label>
                 </li>
                 <li class="purpose__list">
                   <input class="purpose__input" type="radio" name="" value="advice" id="advice">
@@ -74,7 +74,7 @@
               </ul>
             </fieldset>
           </div>
-          <div class="application-form__contacts-forms contacts-forms" action="https://echo.htmlacademy.ru" method="post"> //TODO contacts-forms надо еще отдельно
+          <div class="application-form__contacts-forms contacts-forms" action="https://echo.htmlacademy.ru" method="post"> <!-- //TODO contacts-forms надо еще отдельно -->
             <h2 class="contacts-forms__title">Контактные данные (владельца кота)</h2><!-- Можно так?-->
             <span class="contacts-forms__wrapper">
               <p class="contacts-forms__item">
@@ -89,9 +89,10 @@
           </div>
           <div class="application-form__comments comments" action="https://echo.htmlacademy.ru" method="post">
             <h2 class="comments__title">Комментарий</h2>
-            <textarea name="comment" id="comment-field" rows="10">Расскажите обо всех повадках кота </textarea>
+            <textarea class="comments__input" name="comment" id="comment-field" rows="10">Расскажите обо всех повадках кота </textarea>
           </div>
           <div class="application-form__additionally additionally">
+            <h2 class="additionally__title">Дополнительно</h2>
             <fieldset class="additionally__wrapper">
               <ul class="additionally__list">
                 <li class="additionally__item">
@@ -111,7 +112,7 @@
                   <label class="additionally__label" for="advice">витамины</label>
                 </li>
               </ul>
-              <input type="submit" value="подобрать программу">
+              <input class="button additionally__submit" slogan__to-alltype="submit" value="отправить заявку">
               <small class="additionally__legend additionally__legend--bottom">
                 * — Обязательные поля
               </small>
@@ -122,7 +123,7 @@
       <section class="contacts">
         <div class="contacts__wrapper">
           <p class="contacts__title">
-            ПРИГЛАШАЕМ <br> К СОТРУДНИЧЕСТВУ <br> ДИЛЕРОВ!
+            Приглашаем <br> к сотрудничеству <br> дилеров!
           </p>
           <address class="contacts__text">
             ул. Большая <br> Конюшенная, д. 19/8 <br>Санкт-Петербург

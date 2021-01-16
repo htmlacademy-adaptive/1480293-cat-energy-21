@@ -1,0 +1,27 @@
+.contacts-forms__title {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+  color: $basic-black;
+}
+
+.contacts-forms__label,
+.contacts-forms__input {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: $basic-black;
+}
+
+.contacts-forms__input {  //* как сделать текст в поле черным?//
+  border: 1px solid $border-grey;
+}
+
+.personal-data__input:disabled {
+  border: 2px solid $basic-dark-gray; //*Подскажи плз как проверить?//
+}
+
+.personal-data__input:invalid {
+  border: 2px solid $basic-error-pink; //*Подскажи плз как проверить?//
+}
+

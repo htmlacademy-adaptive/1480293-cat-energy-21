@@ -1,0 +1,54 @@
+.additionally__title {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+  color: $basic-black;
+}
+
+.additionally__label {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color:  $basic-black;
+}
+
+.additionally__input {  //* тоже не пойму//
+  color: $basic-black;
+  border: 1px solid $border-grey;
+}
+
+.additionally__input:hover {
+  border: 1px solid $purpose-gray;
+}
+
+.additionally__item:disabled {  //* как проверить?//
+  opacity: 0.3;
+}
+
+
+.additionally__submit {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 7px 44px;
+}
+
+.additionally__submit:hover,
+.additionally__submit:focus{
+  background-color: $basic-green;
+}
+
+.additionally__submit:active {  //* почему добавляется черный бордер?//
+  background-color: $basic-green;
+  opacity: 0.3;
+}
+
+.additionally__legend--bottom {
+  font-weight: 400;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  color:  $basic-black;
+}
+

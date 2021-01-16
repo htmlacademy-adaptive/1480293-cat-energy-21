@@ -1,0 +1,25 @@
+.personal-data__label,
+.personal-data__input {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $basic-dark-gray;
+}
+
+.personal-data__input {
+  color: $basic-black; //* как сделать текст в поле черным?//
+  border: 1px solid $border-light-grey;
+}
+
+.personal-data__input:hover {
+  border: 1px solid $border-grey;
+}
+
+.personal-data__input:focus {
+  border: 2px solid $basic-dark-gray;
+}
+
+.personal-data__input:invalid {
+  border: 2px solid $basic-error-pink; //*не проверяется у меня почему-то?//
+}
